@@ -1,0 +1,23 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!explorations/"
+website:
+  title: "Regularisation Fundamentals"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: regularisation-basics.qmd
+        text: Regularisation  
+      - href: ridge-regression.qmd
+        text: Ridge Regression
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.scss
+    toc: true
+editor: source
